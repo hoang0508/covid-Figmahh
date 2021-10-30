@@ -1,0 +1,100 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f45c43,
+    #eb3349
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f45c43,
+    #eb3349
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Popins", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+  // overflow: hidden;
+}
+
+section[id] {
+  scroll-margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  &--primary {
+    font-size: 18px;
+    font-weight: 500;
+    color: $secondary-color;
+    border: 2px solid #fb4c47;
+    border-radius: 46px;
+    padding: 12px 35px;
+    line-height: calc(22 / 18);
+  }
+  &--secondary {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px 40px;
+    text-transform: capitalize;
+    background-color: $secondary-color;
+    color: #fff;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    margin-top: 30px;
+  }
+  &--more {
+    padding: 20px 50px;
+    background: rgba(250, 86, 82, 0.15);
+    border-radius: 65px;
+    border: 0;
+    margin-top: 30px;
+  }
+  &--form {
+    margin: 0;
+    padding: 12px 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button--primary {
+    padding: 6px 15px;
+    font-size: 12px;
+    margin-right: 45px;
+  }
+  .button--secondary {
+    padding: 15px 22px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .button--more {
+    padding: 15px 22px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .button--form {
+    margin-top: 0px;
+    padding: 15px 30px;
+  }
+}

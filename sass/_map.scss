@@ -1,0 +1,73 @@
+.map {
+  padding-bottom: 100px;
+  color: $primary-color;
+  font-weight: 14px;
+  font-weight: 600;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-image {
+    max-width: 800px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-national {
+    background: linear-gradient(360deg, #fffbfb -79.45%, #fdfdfd 105.35%);
+    box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    padding: 30px;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &-title {
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-weight: 700;
+  }
+  &-country {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+  }
+  .country-name {
+    font-size: 16px;
+  }
+  .country-image {
+    max-width: 40px;
+    width: 100%;
+  }
+  &-number {
+    display: flex;
+    align-items: baseline;
+    gap: 0 15px;
+    img {
+      width: 16px;
+    }
+  }
+  &-statistical {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .map-national {
+    max-width: unset;
+  }
+}

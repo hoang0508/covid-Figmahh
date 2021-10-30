@@ -1,0 +1,40 @@
+.boxed-content {
+  text-align: center;
+  margin: 0 auto;
+}
+.text {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.title-covid {
+  color: $secondary-color;
+  font-size: 25px;
+  color: $secondary-color;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-size: 35px;
+  color: $primary-color;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 22px;
+  }
+  .title-covid {
+    font-size: 20px;
+  }
+  .text {
+    margin-top: 15px;
+  }
+}
