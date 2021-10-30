@@ -28,10 +28,10 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    transition: all 0.25s linear;
-  }
-  &-column.contagion-border {
-    border-bottom: 4px solid $secondary-color;
+    &-border {
+      transition: all 0.25s linear;
+      border-bottom: 4px solid $secondary-color;
+    }
   }
   &-name {
     color: $primary-color;

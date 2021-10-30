@@ -39,8 +39,8 @@ window.addEventListener("scroll", function (e) {
 const borderColumn = document.querySelectorAll(".contagion-column");
 
 [...borderColumn].forEach((item) =>
-  item.addEventListener("click", function (e) {
-    borderColumn.forEach((item) => item.classList.remove("contagion-border"));
-    e.currentTarget.classList.add("contagion-border");
+  item.addEventListener("click", function () {
+    borderColumn.forEach((item) => item.classList.remove(".contagion-border"));
+    e.target.classList.add("contagion-border");
   })
 );

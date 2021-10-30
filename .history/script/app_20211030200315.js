@@ -40,7 +40,7 @@ const borderColumn = document.querySelectorAll(".contagion-column");
 
 [...borderColumn].forEach((item) =>
   item.addEventListener("click", function (e) {
-    borderColumn.forEach((item) => item.classList.remove("contagion-border"));
-    e.currentTarget.classList.add("contagion-border");
+    borderColumn.forEach((item) => item.classList.remove(".contagion-border"));
+    e.target.classList.add("contagion-border");
   })
 );

@@ -34,13 +34,3 @@ window.addEventListener("scroll", function (e) {
     arrowPage.classList.remove("active-scroll");
   }
 });
-
-// border
-const borderColumn = document.querySelectorAll(".contagion-column");
-
-[...borderColumn].forEach((item) =>
-  item.addEventListener("click", function (e) {
-    borderColumn.forEach((item) => item.classList.remove("contagion-border"));
-    e.currentTarget.classList.add("contagion-border");
-  })
-);

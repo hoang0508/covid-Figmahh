@@ -428,6 +428,10 @@ section[id] {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  transition: all 0.25s linear;
+}
+.contagion-column.contagion-border {
+  border-bottom: 4px solid #fa5652;
 }
 .contagion-name {
   color: #035755;
