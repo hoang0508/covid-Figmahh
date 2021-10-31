@@ -47,13 +47,9 @@ const borderColumn = document.querySelectorAll(".contagion-column");
 
 /// modal
 const modalActive = document.querySelector(".modal");
-const iconModal = document.querySelector(".modal-icon");
+
 window.addEventListener("load", function (e) {
   setTimeout(() => {
     modalActive.classList.add("is-active");
   }, 2000);
-});
-
-iconModal.addEventListener("click", function (e) {
-  modalActive.classList.remove("is-active");
 });
